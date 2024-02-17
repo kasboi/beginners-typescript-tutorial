@@ -16,5 +16,5 @@ export const fetchLukeSkywalker = async () => {
     return res.json();
   });
 
-  return data;
+  return data as LukeSkywalker;
 };

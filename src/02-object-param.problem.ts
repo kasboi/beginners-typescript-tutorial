@@ -1,8 +1,17 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (params) => {
+type numObject = {
+  first: number,
+  second: number
+}
+
+export const addTwoNumbers = (params: { first: number, second: number }) => {
   return params.first + params.second;
 };
+
+type shit_face = string
+
+let screwface: shit_face = "Salamander Capo"
 
 it("Should add the two numbers together", () => {
   expect(
